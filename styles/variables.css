@@ -1,1 +1,22 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --Inter: 'Inter';
+    --PressStart2P: 'PressStart2P';
+
+    --regular-weight: 400;
+    --bold-weight: 700;
+    --main-size: 18px;
+
+    --main-bg-color: rgba(255, 255, 255, 1);
+    --border-color: rgba(26, 26, 26, 1);
+    --text-color: rgba(0, 0, 0, 1);
+
+    --bg-image: url("../images/background.png");
+    --section-image: url("../images/image.png");
+    --inline-size: clamp(375px, 80%, 700px);
+
+    --button-focus-shadow: rgba(0, 0, 0, 1) 2px 2px 0;
+    --button-hover-color: rgba(0, 0, 0, 1);
+
+    --contour-color:  rgba(0, 0, 0, 1);
+    --animation-fill-color: rgba(255, 0, 0, 1);
+}

@@ -1,0 +1,9 @@
+@media (width <= 375px) {
+    :root {
+        --inline-size: 100%;
+    }
+
+    .open-modal-button {
+        flex-direction: column;
+    }
+}
