@@ -127,17 +127,19 @@
   right: clamp(0.8125rem, -0.0637rem + 3.7383vw, 1.5625rem);
   font-family: var(--PressStart2P), sans-serif;
   font-size: 14px;
-  -webkit-text-stroke: 1px var(--main-bg-color);
+  text-shadow:
+          -1px -1px 0 var(--main-bg-color),
+          1px -1px 0 var(--main-bg-color),
+          -1px  1px 0 var(--main-bg-color),
+          1px  1px 0 var(--main-bg-color);
   mix-blend-mode: hard-light;
 }
 
-@supports not(-webkit-text-stroke: 1px var(--main-bg-color)) {
+@supports (-webkit-text-stroke: 1px var(--main-bg-color)) and (text-stroke: 1px var(--main-bg-color)) {
   .watermark {
-    text-shadow:
-            -1px -1px 0 var(--main-bg-color),
-            1px -1px 0 var(--main-bg-color),
-            -1px  1px 0 var(--main-bg-color),
-            1px  1px 0 var(--main-bg-color);
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--main-bg-color);
+    text-stroke: 1px var(--main-bg-color);
   }
 }
 
