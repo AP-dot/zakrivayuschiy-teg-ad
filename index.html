@@ -273,11 +273,13 @@
     <script src="./scripts/like.js"></script>
     <script>
       const dialog = document.querySelector('.dialog');
-      document.getElementById('open').addEventListener('click', (evt) => {
+      const open = document.getElementById('open');
+      const close = document.getElementById('close');
+      open.addEventListener('click', evt => {
         evt.preventDefault();
         dialog.showModal();
       });
-      document.getElementById('close').addEventListener('click', (evt) => {
+      close.addEventListener('click', evt => {
         evt.preventDefault();
         dialog.close();
       });
